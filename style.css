@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(235, 235, 235);
+}
+.header {
+    background: linear-gradient(to right, #c79004, #604502);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    width: 100%;
+}
+.main {
+    padding: 0 10px;
+    width: 75%;
+    margin: auto;
+    text-align: center
+}
+h2 {
+    text-align: left;
+    padding: 10px 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 1.2em;
+    background-color: #795802;
+}
+.menu{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu ul {
+    color: #795802;
+    font-size: 15px;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    list-style: none;
+    margin: 0 15px;
+    color: #795802;
+}
+.menu ul li a {
+    color: #795802;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    color: #795802;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.hero.section {
+    background-color: #e7e7e7;
+    padding: 80px 20px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    text-align: center;
+}
+.hero.section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.hero.section a {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    display: block;
+}
+.hero.section input[type="section"] {
+    margin-top: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 30px;
+    line-height: 2.0;
+}
+.card {
+    background-color: white;
+    text-align: left;
+    width: 80%;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    box-shadow: 6px 5px 10px #888;
+    padding: 30px;
+    position: relative;
+}
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #d20c0c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+table {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th {
+    text-align: center;
+    background-color: #795802;
+    color: white;
+}
+th, td {
+    border: 0x solid #ddd;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+p, td {
+    text-align: left;
+    opacity: 0.6;
+}
+.tr:hover {
+    background-color: #f2f2f2;
+}
+.card a{
+    padding: 10px;
+    font-size: 22px;
+    color: #795802;
+    font-weight: bold;
+}
+form { 
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+input, select, textarea{
+    padding: 10px 12px;
+    box-sizing: border-box;
+    height: 40px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+textarea {
+    height: auto !important;
+    resize: vertical;
+}
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.form-row input,
+.form-row select {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+}
+.form textarea,
+.form input[type="submit"] {
+    width: 100% !important;
+    margin: 8px 0 !important;
+}
+.form input:focus {
+    outline: none;
+    border-color: 1px solid #795802;
+}
+.footer {
+    background: #4a3602;
+    color: white;
+    padding: 10px;  
+    text-align: center;
+    
+}
+.footer a[href] {
+    color: #d99e08;
+    text-decoration: none;
+}
+input[type="submit"] {
+    background-color: #795802;
+    color: white;
+    font-size: 18;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+}
+input[type="section"] {
+    background-color: #795802;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    padding: 10px 25px;
+}
+.hero-btn {
+    background-color: #795802;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    user-select: none;
+}
+.hero-btn:hover {
+    background-color: #6a4602;
+}
+.hero section {
+    padding:70px 20px;
+    text-align:center;
+    background:#f3f3f3;
+}
+
+.hero section h2{
+    font-size:32px;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.hero section p{
+    margin-bottom:25px;
+    color:#666;
+    text-align: center;
+}
+
+.btn-hero section{
+    display:inline-block;
+    padding:12px 30px;
+    background:#8b5e34;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.btn-hero:hover{
+    background:#6f4727;
+}
+
+
+
+
